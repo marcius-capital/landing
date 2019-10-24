@@ -1,0 +1,119 @@
+/* External libraries */
+@import "libs/noty";
+@import "../../../../marcius-css/src/default-obscure";
+
+.header  {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: $zindex-9;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: $zindex-9;
+}
+
+.block {
+	height: 100vh !important;
+	overflow: hidden;
+}
+
+.features-block {
+	.features-section {
+		display: flex;
+		align-content: space-around;
+		flex-wrap: wrap;
+	}
+}
+
+.badge {
+	cursor: pointer;
+	position: relative;
+	height: 50px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&.disabled {
+		cursor: default;
+		opacity: .5;
+		pointer-events: none;
+	}
+}
+
+$icon-height: 1rem;
+
+.social-icons {
+	.social-icon {
+		height: $icon-height;
+		width: $icon-height;
+		background-size: auto $icon-height;
+		background-repeat: no-repeat;
+		margin-right: $control-padding;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&.discord {
+			background-image: url('icons/discord-logo.svg');
+			background-size: auto $icon-height * 1.5;
+			height: $icon-height * 1.5;
+			width: $icon-height * 4.2;
+		}
+
+		&.telegram {
+			background-image: url('icons/telegram-logo.svg');
+		}
+
+		&.github {
+			background-image: url('icons/github-logo.svg');
+		}
+	}
+
+}
+
+
+@media (max-width: $size-xs) {
+
+	.footer {
+		.unit-section {
+			justify-content: center !important;
+		}
+	}
+
+	.init-block {
+		.image {
+			position: absolute;
+			bottom: -50%;
+			left: 0;
+			transform: translateY(65%)
+		}
+	}
+
+	.features-block {
+		.features-section {
+			justify-content: flex-start !important;
+
+			.features-item {
+				width: 100%;
+				background: $body-bg-secondary-color;
+				padding: $control-padding;
+				border-radius: $border-radius;
+				margin-bottom: $control-padding;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+			}
+
+		}
+	}
+}

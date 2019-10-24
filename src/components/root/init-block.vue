@@ -1,0 +1,40 @@
+<template>
+	<div class="background-secondary block init-block flex-centered" >
+
+		<div class="container grid-md">
+			<div class="row">
+
+				<div class="column col-6 col-md-12 flex-centered-vertical">
+					<div class="width100 text-center-sm">
+						<div class="text-secondary text-smallcaps text-uppercase mb">Easy, Smart, Secure</div>
+						<div class="h2 mb2">Boost trading<br>profit for free</div>
+
+						<!--Badges-->
+						<badge/>
+
+					</div>
+				</div>
+
+				<div class="column col-6 col-md-12 flex-centered image">
+					<img :src="image" alt="" style="height: 70vh">
+				</div>
+
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+	import phoneImg from '../../static/img/phone.png'
+
+	import badge from './modules/badge'
+
+	export default {
+		data: () => ({
+			image: phoneImg,
+		}),
+		components: {
+			badge
+		}
+	}
+</script>
