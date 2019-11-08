@@ -7,7 +7,7 @@
 				<div class="column col-6 col-md-12 flex-centered-vertical">
 					<div class="width100 text-center-sm">
 						<div class="text-secondary text-uppercase mb">Easy, Smart, Secure</div>
-						<div class="h2 mb2">Boost trading<br>profit for free</div>
+						<div class="h2 mb">Boost trading<br>profit for free</div>
 
 						<!--Action buttons-->
 						<actionButtons />
