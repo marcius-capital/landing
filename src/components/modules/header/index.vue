@@ -10,7 +10,7 @@
 				<span class="text-semibold h6">Marcius Capital</span>
 			</div>
 			<div class="unit-section">
-				<a class="btn btn-link" href="https://drive.google.com/file/d/1RXDoZ0EFpMiWXJByd9G9OL6f7HeDm36r/view" target="_blank">Investors</a>
+				<a class="" href="https://drive.google.com/file/d/1RXDoZ0EFpMiWXJByd9G9OL6f7HeDm36r/view" target="_blank">Investors</a>
 			</div>
 		</div>
 	</div>
