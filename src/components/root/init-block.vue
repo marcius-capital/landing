@@ -6,11 +6,11 @@
 
 				<div class="column col-6 col-md-12 flex-centered-vertical">
 					<div class="width100 text-center-sm">
-						<div class="text-secondary text-smallcaps text-uppercase mb">Easy, Smart, Secure</div>
+						<div class="text-secondary text-uppercase mb">Easy, Smart, Secure</div>
 						<div class="h2 mb2">Boost trading<br>profit for free</div>
 
-						<!--Badges-->
-						<badge/>
+						<!--Action buttons-->
+						<actionButtons />
 
 					</div>
 				</div>
@@ -27,14 +27,14 @@
 <script>
 	import phoneImg from '../../static/img/phone.png'
 
-	import badge from './modules/badge'
+	import actionButtons from './modules/action-buttons'
 
 	export default {
 		data: () => ({
 			image: phoneImg,
 		}),
 		components: {
-			badge
+        actionButtons
 		}
 	}
 </script>
