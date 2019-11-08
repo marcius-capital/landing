@@ -1,6 +1,6 @@
 <template>
-	<div class="block flex-centered">
-		<div class="container grid-md">
+	<div class="h100 flex-centered">
+		<div class="container container-padding grid-md">
 			<div class="row">
 
 				<div class="column col-6 col-sm-12">
