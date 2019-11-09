@@ -1,5 +1,5 @@
 <template>
-	<div class="content block features-block flex-centered">
+	<div class="background-secondary content block features-block flex-centered">
 
 		<div class="container grid-md">
 			<div class="row">

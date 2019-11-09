@@ -1,6 +1,5 @@
 /* External libraries */
 @import "libs/noty";
-
 // @import "~@marcius-capital/marcius-css/src/default-obscure";
 @import "../../../marcius-css/src/default-obscure";
 
@@ -30,6 +29,18 @@
 		display: flex;
 		align-content: space-around;
 		flex-wrap: wrap;
+	}
+}
+
+.tariff-block {
+	.tariff-item {
+		padding: $control-padding;
+		border: $border-width solid $border-color;
+		border-radius: $border-radius;
+
+		&.active {
+			border-color: $primary-color;
+		}
 	}
 }
 
@@ -85,7 +96,6 @@ $icon-height: 1rem;
 
 }
 
-
 @media (max-width: $size-md) {
 
 	.footer {
@@ -109,7 +119,7 @@ $icon-height: 1rem;
 
 			.features-item {
 				width: 100%;
-				background: $bg-1-color;
+				background: $bg-color;
 				padding: $control-padding;
 				border-radius: $border-radius;
 				margin-bottom: $control-padding;

@@ -1,10 +1,10 @@
 <template>
-	<div class="h100 flex-centered">
+	<div class="background-secondary  h100 tariff-block flex-centered">
 		<div class="container container-padding grid-md">
 			<div class="row">
 
 				<div class="column col-6 col-md-12">
-					<div class="content text-center" style="padding: 1rem; border: 1px solid  #5686f0;">
+					<div class="content text-center tariff-item active">
 						<div class="content-header mb">
 							<div class="h4">
 								Base
@@ -20,8 +20,7 @@
 				</div>
 
 				<div class="column col-6 col-md-12">
-					<div class="content text-center"
-							 style="padding: 1rem; border: 1px solid rgba(255,255,255,.1); ">
+					<div class="content text-center tariff-item">
 						<div class="content-header mb ">
 							<div class="h4 flex-centered">
 								Advanced
