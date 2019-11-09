@@ -3,7 +3,7 @@
 		<div class="container container-padding grid-md">
 			<div class="row">
 
-				<div class="column col-6 col-sm-12">
+				<div class="column col-6 col-md-12">
 					<div class="content text-center" style="padding: 1rem; border: 1px solid  #007aff;">
 						<div class="content-header mb">
 							<div class="h4">
@@ -19,7 +19,7 @@
 					</div>
 				</div>
 
-				<div class="column col-6 col-sm-12">
+				<div class="column col-6 col-md-12">
 					<div class="content text-center"
 							 style="padding: 1rem; border: 1px solid rgba(255,255,255,.1); ">
 						<div class="content-header mb ">
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 
-				<div class="column col-6 col-sm-12">
+				<!--div class="column col-6 col-sm-12">
 					<div class="content text-center" style="padding: 1rem; border: 1px solid  rgba(255,255,255,.1);">
 						<div class="content-header mb">
 							<div class="flex-centered h4">
@@ -56,7 +56,7 @@
 							Trust management of your assets.
 						</div>
 					</div>
-				</div>
+				</div-->
 
 			</div>
 

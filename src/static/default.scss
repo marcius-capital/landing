@@ -3,11 +3,6 @@
 
 // @import "~@marcius-capital/marcius-css/src/default-obscure";
 @import "../../../marcius-css/src/default-obscure";
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap');
-
-body {
-	font-family: 'Roboto', sans-serif;
-}
 
 .header {
 	position: fixed;
@@ -91,7 +86,7 @@ $icon-height: 1rem;
 }
 
 
-@media (max-width: $size-xs) {
+@media (max-width: $size-md) {
 
 	.footer {
 		.unit-section {

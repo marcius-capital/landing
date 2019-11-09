@@ -4,7 +4,7 @@
 		<div class="container grid-md">
 			<div class="row">
 				<!--Left-->
-				<div class="features-section column col-4 col-md-6 col-sm-12 text-right text-left-sm"
+				<div class="features-section column col-4 col-md-12 text-right text-left-sm"
 						 style="justify-content: flex-end;">
 					<div class="features-item tile tile-list" v-for="i in itemsLeft">
 						<div class="tile-section tile-icon show-sm">
@@ -22,7 +22,7 @@
 					<img :src="image" alt="" style="height: 70vh">
 				</div>
 				<!--Right-->
-				<div class="features-section column col-4 col-md-6 col-sm-12">
+				<div class="features-section column col-4 col-md-12">
 					<div class="features-item tile tile-list" v-for="i in itemsRight">
 						<div class="tile-section tile-icon show-sm">
 							<i class="material-icons">{{i.icon}}</i>
