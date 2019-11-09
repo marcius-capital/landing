@@ -4,7 +4,7 @@
 			<div class="row">
 
 				<div class="column col-6 col-md-12">
-					<div class="content text-center" style="padding: 1rem; border: 1px solid  #007aff;">
+					<div class="content text-center" style="padding: 1rem; border: 1px solid  #5686f0;">
 						<div class="content-header mb">
 							<div class="h4">
 								Base

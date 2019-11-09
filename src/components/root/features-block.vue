@@ -61,7 +61,7 @@
 				{
 					'title': 'Cross-platform',
 					'description': 'Web and mobile applications',
-					icon: 'devices_other',
+					icon: 'phonelink',
 				},
 				{
 					'title': 'Secure',
