@@ -1,7 +1,7 @@
 <template>
 	<div class="h50 action-block flex-centered">
 		<div class="container grid-sm text-center">
-			<div class="mb">
+			<div class="mb hide-md">
 				<div class="h4">Trading has never been so easy</div>
 			</div>
 

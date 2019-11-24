@@ -4,7 +4,7 @@
 		<div class="container grid-md">
 			<div class="row">
 
-				<div class="column col-6 col-md-12 flex-centered-vertical">
+				<div class="column col-5 col-md-12 flex-centered-vertical">
 					<div class="width100 text-center-md">
 						<div class="text-secondary text-uppercase mb">Easy, Smart, Secure</div>
 						<div class="h2 mb2">Boost trading<br>profit for free</div>
@@ -15,8 +15,10 @@
 					</div>
 				</div>
 
-				<div class="column col-6 col-md-12 flex-centered image">
-					<img :src="image" alt="" style="height: 70vh">
+				<div class="column col-2 hide-md"></div>
+
+				<div class="column col-5 col-md-12 flex-centered">
+					<img :src="image" class="image" alt="">
 				</div>
 
 			</div>

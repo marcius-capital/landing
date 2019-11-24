@@ -1,5 +1,5 @@
 <template>
-	<div class="background-secondary  h100 tariff-block flex-centered">
+	<div class="background-secondary  h50 tariff-block flex-centered">
 		<div class="container container-padding grid-md">
 			<div class="row">
 

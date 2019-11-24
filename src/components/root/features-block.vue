@@ -19,7 +19,7 @@
 					</div>
 				</div>
 				<div class="column col-4 flex-centered hide-md">
-					<img :src="image" alt="" style="height: 70vh">
+					<img :src="image" class="image" alt="">
 				</div>
 				<!--Right-->
 				<div class="features-section column col-4 col-md-12">

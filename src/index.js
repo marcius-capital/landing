@@ -11,6 +11,7 @@ import 'material-icons'
 
 /* Custom styles */
 import './static/default.scss'
+import './static/fonts/HelveticaNeueCyr/stylesheet.scss'
 
 /* Components */
 import './components/modules/components'

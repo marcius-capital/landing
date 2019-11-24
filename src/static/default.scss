@@ -3,6 +3,12 @@
 // @import "~@marcius-capital/marcius-css/src/default-obscure";
 @import "../../../marcius-css/src/default-obscure";
 
+html, body {
+	font-family: 'HelveticaNeueCyr', sans-serif;
+	font-weight: 400;
+}
+
+
 .header {
 	position: fixed;
 	width: 100%;
@@ -27,7 +33,7 @@
 .features-block {
 	.features-section {
 		display: flex;
-		align-content: space-around;
+		justify-content: center;
 		flex-wrap: wrap;
 	}
 }
@@ -42,6 +48,11 @@
 			border-color: $primary-color;
 		}
 	}
+}
+
+.image {
+	height: auto;
+	width: 100%;
 }
 
 .badge {
@@ -61,7 +72,7 @@
 }
 
 .h50 {
-	height: 50vh;
+	min-height: 50vh;
 }
 
 $icon-height: 1rem;
@@ -109,7 +120,8 @@ $icon-height: 1rem;
 			position: absolute;
 			bottom: -50%;
 			left: 0;
-			transform: translateY(80%)
+			transform: translateY(100%);
+			padding: 0 1rem;
 		}
 	}
 
