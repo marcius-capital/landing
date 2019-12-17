@@ -7,9 +7,9 @@
 			<div class="row row-landing">
 
 			<div class="column col-6 col-md-12" v-for="(i,index) in schema">
-				<div class="square background-secondary">
+				<div class="square background-secondary ">
 					<div class="square-item flex-centered text-center">
-						<div>
+						<div class="content-padding">
 							<div class="h3 text-semibold"> {{i.name}} </div>
 							<div class="text-secondary h5"> {{i.description}} </div>
 						</div>
@@ -35,11 +35,11 @@
 			schema: [
 				{
 					name: 'Base',
-					description: 'Free forever',
+					description: 'Free forever. Manual and automatic trading.',
 				},
 				{
 					name: 'Advanced',
-					description: 'We will pay 50%',
+					description: 'Trade well? Received 50% from each subscription on you.',
 				},
 			]
 		}),

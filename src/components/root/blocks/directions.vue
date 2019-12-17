@@ -8,7 +8,7 @@
 					<div class="square image" :style="'background: url(' + i.image + ')'">
 						<div class="square-item flex-centered text-center" >
 							<div class="content-padding">
-								<div class="h3 text-semibold"> {{i.name}} </div>
+								<div class="h3 text-semibold" v-html="i.name"></div>
 								<div class="h5 mb" v-html="i.description"></div>
 							</div>
 						</div>
@@ -26,7 +26,7 @@
 		data: () => ({
 			schema: [
 				{
-					name: 'Capital for Traders',
+					name: `Capital for <br class="show-sm"> Traders`,
 					description: `Manual and automatic trading<br>on crypto-exchange`,
 					image: 'https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
 				},

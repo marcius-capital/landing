@@ -1,8 +1,8 @@
 <template>
 	<div class="features-block flex-centered h50">
 
-		<div class="container grid-xl">
-			<div class="row">
+		<div class="container container-landing grid-xl">
+			<div class="row row-landing">
 				<div class="column col-4 col-md-12" v-for="(i,index) in schema" :key="index">
 
 					<div class="square square50">
