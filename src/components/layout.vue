@@ -3,6 +3,9 @@
 		<theader />
 		<!--transition :name="transitionName" mode="out-in"/-->
 		<router-view/>
+
+		<div class="divider" />
+
 		<tfooter />
 	</div>
 </template>

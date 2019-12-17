@@ -1,6 +1,8 @@
 /* External libraries */
 @import "libs/noty";
-// @import "~@marcius-capital/marcius-css/src/default-obscure";
+
+$border-radius: 0;
+
 @import "../../../marcius-css/src/default-obscure";
 
 html, body {
@@ -10,6 +12,7 @@ html, body {
 
 
 .header {
+	background: #0b0b0db3;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -17,131 +20,87 @@ html, body {
 	z-index: $zindex-9;
 }
 
-.footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	z-index: $zindex-9;
-}
-
-.block {
-	height: 100vh !important;
-	overflow: hidden;
-}
-
 .features-block {
 	.features-section {
 		display: flex;
-		justify-content: center;
+		align-content: space-around;
 		flex-wrap: wrap;
 	}
 }
 
-.tariff-block {
-	.tariff-item {
-		padding: $control-padding;
-		border: $border-width solid $border-color;
-		border-radius: $border-radius;
-
-		&.active {
-			border-color: $primary-color;
-		}
-	}
-}
-
-.image {
-	height: auto;
-	width: 100%;
-}
-
-.badge {
-	cursor: pointer;
-	position: relative;
-	height: 50px;
-
-	&:last-child {
-		margin-right: 0;
-	}
-
-	&.disabled {
-		cursor: default;
-		opacity: .5;
-		pointer-events: none;
-	}
+.h25 {
+	min-height: 25vh;
 }
 
 .h50 {
 	min-height: 50vh;
 }
 
-$icon-height: 1rem;
+.image {
+	background-size: cover !important;
+	position: relative;
 
-.social-icons {
-	.social-icon {
-		height: $icon-height;
-		width: $icon-height;
-		background-size: auto $icon-height;
-		background-repeat: no-repeat;
-		margin-right: $control-padding;
-
-		&:last-child {
-			margin-right: 0;
-		}
-
-		&.discord {
-			background-image: url('icons/discord-logo.svg');
-			background-size: auto $icon-height * 1.5;
-			height: $icon-height * 1.5;
-			width: $icon-height * 4.2;
-		}
-
-		&.telegram {
-			background-image: url('icons/telegram-logo.svg');
-		}
-
-		&.github {
-			background-image: url('icons/github-logo.svg');
-		}
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, .1);
 	}
-
 }
 
-@media (max-width: $size-md) {
+h1 {
+	font-size: 4rem;
+}
 
-	.footer {
-		.unit-section {
-			justify-content: center !important;
-		}
+.footer {
+	height: 100px;
+}
+
+
+.block {
+	&.init {
 	}
+}
 
-	.init-block {
-		.image {
-			position: absolute;
-			bottom: -50%;
-			left: 0;
-			transform: translateY(100%);
-			padding: 0 1rem;
-		}
+.divider {
+	margin: 0;
+}
+
+.chart {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+$control-padding-2: $control-padding * 2;
+
+.container-landing {
+	padding-left: $control-padding-2;
+	padding-right: $control-padding-2;
+
+	&.container-padding {
+		padding-top: $control-padding-2;
+		padding-bottom: $control-padding-2;
 	}
+}
 
-	.features-block {
-		.features-section {
-			justify-content: flex-start !important;
 
-			.features-item {
-				width: 100%;
-				background: $bg-color;
-				padding: $control-padding;
-				border-radius: $border-radius;
-				margin-bottom: $control-padding;
+.row-landing {
+	margin: 0;
 
-				&:last-child {
-					margin-bottom: 0;
-				}
+	.column {
+		padding: $control-padding-2 / 2;
+	}
+}
 
-			}
+@media (max-width: $size-sm) {
+	.row-landing {
+		margin: -$control-padding-2;
 
+		.column {
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 }

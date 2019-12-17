@@ -9,7 +9,7 @@
 </template>
 
 <script>
-	import binance from '../../static/binance-logo.svg'
+	import binance from '../../../static/binance-logo.svg'
 
 	export default {
 		data: () => ({
