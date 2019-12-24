@@ -31,7 +31,7 @@
 					image: 'https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
 				},
 				{
-					name: 'Capital for Investors',
+					name:  `Capital for <span class="text-line-through">Investors</span> all`,
 					description: 'Will earn you 48% per annum*',
 					image: 'https://images.unsplash.com/photo-1528567656495-d439e32f6be1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
 					link: ''

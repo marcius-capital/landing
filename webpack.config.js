@@ -123,6 +123,9 @@ if (process.env.NODE_ENV === 'production') {
 				NODE_ENV: '"production"'
 			}
 		}),
+		new webpack.LoaderOptionsPlugin({
+			minimize: true
+		}),
 		new HtmlWebpackPlugin({
 			title: 'PRODUCTION prerender-spa-plugin',
 			template: path.resolve(__dirname, './index.html'),
@@ -133,9 +136,5 @@ if (process.env.NODE_ENV === 'production') {
 			staticDir: path.resolve(__dirname, './dist'),
 			routes: ['/'],
 		}),
-
-		new webpack.LoaderOptionsPlugin({
-			minimize: true
-		})
 	])
 }

@@ -11,14 +11,9 @@
 </template>
 
 <script>
-	import phoneImg from '../../../static/img/phones-group.png'
-
 	import actionButtons from '../modules/action-buttons'
 
 	export default {
-		data: () => ({
-			image: phoneImg,
-		}),
 		components: {
 			actionButtons
 		}

@@ -1,6 +1,6 @@
 <template>
-	<div class="h50 tariff-block flex-centered">
-		<div class="container container-landing container-padding grid-xl">
+	<div class="h50 flex-centered">
+		<div class="container container-landing container-padding grid-xl"  style=" padding-bottom: 0; ">
 
 			<div class="text-semibold h25 h3 flex-centered">Tariffs</div>
 
@@ -11,7 +11,8 @@
 					<div class="square-item flex-centered text-center">
 						<div class="content-padding">
 							<div class="h3 text-semibold"> {{i.name}} </div>
-							<div class="text-secondary h5"> {{i.description}} </div>
+							<div class="text-secondary h5 mb"> {{i.description}} </div>
+							<a href="" class="h5 text-semibold disabled">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -35,11 +36,11 @@
 			schema: [
 				{
 					name: 'Base',
-					description: 'Free forever. Manual and automatic trading.',
+					description: 'Free pumped terminal and bots',
 				},
 				{
 					name: 'Advanced',
-					description: 'Trade well? Received 50% from each subscription on you.',
+					description: 'Trading well? Will pay 50%',
 				},
 			]
 		}),
