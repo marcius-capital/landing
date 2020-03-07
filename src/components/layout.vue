@@ -1,17 +1,14 @@
 <template>
-	<div>
+	<div style="min-height: 100vh;">
 		<theader />
 		<!--transition :name="transitionName" mode="out-in"/-->
-		<router-view/>
-
-		<div class="divider" />
-
+		<router-view></router-view>
 		<tfooter />
 	</div>
 </template>
 
 <script>
-	import theader from './modules/header/index.vue'
+	import theader from './modules/header'
 	import tfooter from './modules/footer.vue'
 
 	export default {
@@ -34,7 +31,8 @@
 </script>
 
 <style lang="scss">
-	.page-enter-active, .page-leave-active {
+	.page-enter-active,
+	.page-leave-active {
 		transition: all 400ms;
 	}
 

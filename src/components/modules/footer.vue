@@ -1,12 +1,7 @@
 <template>
-	<div class="footer flex-centered">
-		<div class="container grid-lg">
-			<div class="text-center">
-				<div class="text-secondary">© {{new Date().getFullYear()}}	{{$store.state.name}}. All rights reserved. </div>
-				<div>
-					<a v-for="i in items" :href="i.link" class="link link-padding" target="_blank">{{i.name}}</a>
-				</div>
-			</div>
+	<div class="footer flex-centered-vertical">
+		<div class="container grid-xl text-center-sm">
+			<a v-for="i in items" :href="i.link" class="link link-padding text-light" target="_blank">{{i.name}}</a>
 		</div>
 	</div>
 </template>

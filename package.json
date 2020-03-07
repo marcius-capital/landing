@@ -1,40 +1,38 @@
 {
-	"name": "landing",
+	"name": "website",
 	"version": "1.0.0",
 	"description": "",
 	"author": "Nikita Marcius <Telegram: @nikitamarcius>",
 	"main": "./src/index.js",
 	"scripts": {
 		"dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
-		"build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-		"clear": "cross-env BUILD_TARGET=clean node webpack.config.js",
-		"lint": "eslint --fix . --ext .js"
+		"build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
 	},
 	"dependencies": {
+		"@marcius-capital/fonts": "1.0.0",
 		"material-icons": "0.3.1",
-		"noty": "3.2.0-beta",
 		"vue": "2.5.17",
 		"vue-router": "3.0.1",
 		"vuex": "3.0.1"
 	},
 	"devDependencies": {
-		"babel-core": "6.26.0",
-		"babel-eslint": "8.2.3",
-		"babel-loader": "7.1.4",
-		"babel-preset-env": "1.6.1",
-		"copy-webpack-plugin": "4.5.4",
+		"@babel/cli": "7.7.5",
+		"@babel/core": "7.7.5",
+		"@babel/node": "7.7.4",
+		"@babel/plugin-syntax-dynamic-import": "7.7.4",
+		"@babel/preset-env": "7.7.6",
+		"babel-loader": "8.0.6",
 		"cross-env": "5.1.4",
 		"css-loader": "0.28.11",
-		"eslint": "4.19.1",
-		"eslint-config-airbnb-base": "12.1.0",
-		"eslint-plugin-import": "2.11.0",
 		"file-loader": "1.1.11",
 		"html-webpack-plugin": "3.2.0",
+		"mini-css-extract-plugin": "0.9.0",
 		"node-sass": "4.12.0",
+		"optimize-css-assets-webpack-plugin": "5.0.3",
 		"prerender-spa-plugin": "3.4.0",
 		"sass-loader": "7.1.0",
 		"style-loader": "0.21.0",
-		"uglifyjs-webpack-plugin": "1.2.5",
+		"terser-webpack-plugin": "2.3.1",
 		"url-loader": "1.0.1",
 		"vue-loader": "15.4.1",
 		"vue-template-compiler": "2.5.17",
@@ -44,10 +42,10 @@
 	},
 	"babel": {
 		"presets": [
-			"env"
+			"@babel/preset-env"
 		],
 		"plugins": [
-			"syntax-dynamic-import"
+			"@babel/plugin-syntax-dynamic-import"
 		]
 	}
 }

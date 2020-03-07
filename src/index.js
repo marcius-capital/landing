@@ -1,24 +1,20 @@
 import Vue from 'vue'
-import VeeValidate from 'vee-validate'
 
-/* Secondary imports */
 import router from './router'
 import store from './store/index'
 import './plugins'
 
-/* Material design icons */
+
+// Custom styles
 import 'material-icons'
+import '@marcius-capital/fonts'
 
-/* Custom styles */
 import './static/default.scss'
-import './static/fonts/HelveticaNeueCyr/stylesheet.scss'
 
-/* Components */
+// Components
 import './components/modules/components'
 
 import App from './components/layout.vue'
-
-Vue.use(VeeValidate)
 
 new Vue({
 	el: '#app',

@@ -3,26 +3,32 @@ const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
+	target: 'web',
 	mode: 'development',
 	entry: './src/index.js',
 	output: {
 		path: path.resolve(__dirname, './dist'),
 		publicPath: '/',
-		filename: 'build.js',
+		filename: 'js/[name].[hash].js',
+		chunkFilename: 'js/[id].[hash].js'
 	},
 	module: {
 		rules: [
 			{
 				test: /\.css$/,
 				use: [
-					'vue-style-loader',
-					'css-loader'
+					// https://vue-loader.vuejs.org/ru/guide/extract-css.html#webpack-4
+					process.env.NODE_ENV !== 'production' ? 'vue-style-loader' : MiniCssExtractPlugin.loader,
+					'css-loader',
 				],
 			},
 			{
@@ -82,6 +88,15 @@ module.exports = {
 		]
 	},
 	plugins: [
+		// extract css into its own file
+		new MiniCssExtractPlugin({
+			// Options similar to the same options in webpackOptions.output
+			// both options are optional
+			filename: 'css/[name].[chunkhash].css'
+		}),
+		// Compress extracted CSS. We are using this plugin so that possible
+		// duplicated CSS from different components can be deduped.
+		new OptimizeCSSPlugin({ safe: true }),
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, './index.html'),
 			filename: 'index.html',
@@ -105,14 +120,52 @@ module.exports = {
 	performance: {
 		hints: false
 	},
-	// devtool: '#eval-source-map',
+	// https://webpack.js.org/plugins/split-chunks-plugin/
 	optimization: {
-		minimizer: [new UglifyJSPlugin({
-			parallel: true,
-			extractComments: true,
-		})],
+		removeAvailableModules: true,
+		runtimeChunk: 'single',
+		splitChunks: {
+			chunks: 'all',
+			cacheGroups: {
+				commons: {
+					test: /[\\/]node_modules[\\/]/,
+					name: 'vendors',
+					chunks: 'all'
+				},
+				default: {
+					enforce: true,
+					priority: 1
+				},
+				vendors: {
+					test: /[\\/]node_modules[\\/]/,
+					priority: 2,
+					name: 'vendors',
+					enforce: true,
+					chunks: 'all'
+				}
+			}
+		},
+		minimize: true,
+		minimizer: [
+			new TerserPlugin({
+				cache: true,
+				parallel: true,
+				sourceMap: false,
+				terserOptions: {
+					safari10: true,
+					warnings: false,
+					output: {
+						comments: false,
+					},
+				},
+				extractComments: false,
+			}),
+		],
 	},
 }
+
+
+// * PRODUCTION
 
 if (process.env.NODE_ENV === 'production') {
 	module.exports.devtool = '#source-map'
@@ -123,15 +176,24 @@ if (process.env.NODE_ENV === 'production') {
 				NODE_ENV: '"production"'
 			}
 		}),
-		new webpack.LoaderOptionsPlugin({
-			minimize: true
-		}),
 		new HtmlWebpackPlugin({
-			title: 'PRODUCTION prerender-spa-plugin',
 			template: path.resolve(__dirname, './index.html'),
-			filename: path.resolve(__dirname, 'dist/index.html'),
+			// filename: config.build.filename,
+			inject: true,
+			mobile: true,
+			minify: {
+				removeComments: true,
+				collapseWhitespace: true,
+				removeAttributeQuotes: true,
+				html5: true
+				// more options:
+				// https://github.com/kangax/html-minifier#options-quick-reference
+			},
+			// necessary to consistently work with multiple chunks via CommonsChunkPlugin
+			chunksSortMode: 'dependency',
 			favicon: './src/static/favicon.ico',
 		}),
+		// Static webpage
 		new PrerenderSPAPlugin({
 			staticDir: path.resolve(__dirname, './dist'),
 			routes: ['/'],
