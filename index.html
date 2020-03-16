@@ -515,7 +515,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  background: #202023;
+  background: #202022;
   color: #FFF;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-weight: 300;
@@ -741,15 +741,15 @@ dl dd {
       text-align: left;
       width: 100%; }
   .table.table-striped tbody tr:nth-of-type(even) {
-    background: #2c2c30; }
+    background: #2c2c2f; }
   .table.table-striped.table-striped-reverse tbody tr:nth-of-type(even) {
     background: inherit; }
   .table.table-striped.table-striped-reverse tbody tr:nth-of-type(odd) {
-    background: #2c2c30; }
+    background: #2c2c2f; }
   .table tbody tr.active, .table.table-striped tbody tr.active {
-    background: #2c2c30; }
+    background: #2c2c2f; }
   .table.table-hover tbody tr:not([disabled]):hover {
-    background: #38383e;
+    background: #39393c;
     cursor: pointer; }
   .table.table-scroll {
     height: inherit;
@@ -896,8 +896,8 @@ dl dd {
     border-color: transparent;
     color: #fff; }
   .btn.btn-default {
-    background: #38383e;
-    border-color: #38383e;
+    background: #39393c;
+    border-color: #39393c;
     color: #FFF; }
     .btn.btn-default:focus, .btn.btn-default:hover, .btn.btn-default.active {
       background: #f2f2f2;
@@ -1129,6 +1129,10 @@ legend {
   width: 100%; }
   .form-input[type="password"] {
     letter-spacing: 0.05rem; }
+  .form-input[type="number"].hide-arrows::-webkit-outer-spin-button, .form-input[type="number"].hide-arrows::-webkit-inner-spin-button {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    margin: 0; }
   .form-input.form-input-search {
     background: transparent;
     border: none; }
@@ -1138,7 +1142,6 @@ legend {
     border-color: #fff !important; }
   .form-input ~ label {
     position: absolute;
-    pointer-events: none;
     left: 0;
     color: #FFF;
     transform: translateY(-50%);
@@ -1341,7 +1344,7 @@ Form actions: left / right
   background: #fff;
   border-color: #fff; }
   .form-checkbox input:indeterminate + .form-icon::before {
-    background: #202023;
+    background: #202022;
     content: "";
     height: 2px;
     left: 50%;
@@ -1355,7 +1358,7 @@ Form actions: left / right
   border-radius: 50%; }
 
 .form-radio input:checked + .form-icon::before {
-  background: #202023;
+  background: #202022;
   border-radius: 50%;
   content: "";
   height: 6px;
@@ -1367,7 +1370,7 @@ Form actions: left / right
 
 .form-switch .form-icon {
   border: 0.05rem solid rgba(255, 255, 255, 0.05);
-  background: #38383e;
+  background: #39393c;
   background-clip: padding-box;
   border-radius: 0.45rem;
   height: 0.9rem;
@@ -1390,18 +1393,18 @@ Form actions: left / right
   left: 14px; }
 
 .form-switch input:active + .form-icon::before {
-  background: #202023; }
+  background: #202022; }
 
 .input-group {
   display: flex; }
   .input-group .input-group-addon {
-    background: #202023;
+    background: #202022;
     border: 0.05rem solid rgba(0, 0, 0, 0.1);
     border-radius: 0.2rem;
     line-height: 1.2rem;
     padding: 0.35rem 0.8rem;
     white-space: nowrap;
-    background: #38383e; }
+    background: #39393c; }
     .input-group .input-group-addon.addon-xs {
       font-size: 0.6rem;
       height: 0.8rem;
@@ -1515,12 +1518,12 @@ Form actions: left / right
 .form-input:disabled, .form-input.disabled,
 .form-select:disabled,
 .form-select.disabled {
-  background-color: #202023;
+  background-color: #202022;
   cursor: not-allowed;
   opacity: .5; }
 
 .form-input[readonly] {
-  background-color: #202023; }
+  background-color: #202022; }
 
 input:disabled + .form-icon, input.disabled + .form-icon {
   background: #000000;
@@ -1548,7 +1551,7 @@ input:disabled + .form-icon, input.disabled + .form-icon {
   border-radius: 0.1rem;
   line-height: 1.2;
   padding: .05rem .2rem;
-  background: #2c2c30;
+  background: #2c2c2f;
   color: white;
   display: inline-block;
   margin-right: 0.05rem;
@@ -1579,7 +1582,7 @@ input:disabled + .form-icon, input.disabled + .form-icon {
 
 .meter {
   appearance: none;
-  background: #202023;
+  background: #202022;
   border: 0;
   border-radius: 0.2rem;
   display: block;
@@ -1590,7 +1593,7 @@ input:disabled + .form-icon, input.disabled + .form-icon {
   .meter::-webkit-meter-bar, .meter::-webkit-meter-optimum-value, .meter::-webkit-meter-suboptimum-value, .meter::-webkit-meter-even-less-good-value {
     border-radius: 0.2rem; }
   .meter::-webkit-meter-bar {
-    background: #202023; }
+    background: #202022; }
   .meter::-webkit-meter-optimum-value {
     background: #30D158; }
   .meter::-webkit-meter-suboptimum-value {
@@ -2061,7 +2064,7 @@ video.video-responsive {
       margin-bottom: 0 !important; }
     .section .section-item.section-item-filled {
       padding: 1rem;
-      background-color: #2c2c30;
+      background-color: #2c2c2f;
       border-radius: 0.2rem; }
   .section:last-child {
     margin-bottom: 0; }
@@ -2139,7 +2142,7 @@ summary.accordion-header::-webkit-details-marker {
   .avatar .avatar-icon,
   .avatar .avatar-presence, .icon .avatar-icon,
   .icon .avatar-presence {
-    background: #38383e;
+    background: #39393c;
     bottom: 14.64%;
     height: 50%;
     padding: 0.1rem;
@@ -2170,8 +2173,8 @@ summary.accordion-header::-webkit-details-marker {
     z-index: 1; }
   .avatar.avatar-blank, .icon.avatar-blank {
     background: transparent;
-    border: 0.1rem dashed #202023;
-    color: #202023; }
+    border: 0.1rem dashed #202022;
+    color: #202022; }
 
 .icon {
   font-size: 0.8rem;
@@ -2322,12 +2325,12 @@ summary.accordion-header::-webkit-details-marker {
       border-bottom-right-radius: 0.2rem; }
 
 .form-group-dark .chip {
-  background: #202023;
+  background: #202022;
   color: #000000; }
 
 .chip {
   align-items: center;
-  background: #202023;
+  background: #202022;
   border-radius: 5rem;
   display: inline-flex;
   font-size: 90%;
@@ -2363,7 +2366,7 @@ summary.accordion-header::-webkit-details-marker {
     padding: 0;
     display: block;
     position: absolute;
-    background-color: #202023;
+    background-color: #202022;
     z-index: 1;
     width: 100%; }
     .dropdown .dropdown-content li {
@@ -2417,7 +2420,7 @@ summary.accordion-header::-webkit-details-marker {
       top: initial;
       bottom: 30px; }
     .dropdown-panel ul ul {
-      background: rgba(32, 32, 35, 0.8);
+      background: rgba(32, 32, 34, 0.8);
       padding: 0;
       text-align: center;
       display: none;
@@ -2473,7 +2476,7 @@ summary.accordion-header::-webkit-details-marker {
 .modal-container {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
   position: relative;
-  background: #2c2c30;
+  background: #2c2c2f;
   border-radius: 0.2rem;
   display: flex;
   flex-direction: column;
@@ -2641,15 +2644,20 @@ summary.accordion-header::-webkit-details-marker {
       background: #FFF; }
 
 .slider {
+  position: relative;
   -webkit-appearance: none;
   /* Override default CSS styles */
   appearance: none;
   width: 100%;
   /* Full-width */
   height: 0.2rem;
-  background: #202023;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 0.2rem;
   /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ }
+  .slider[type="range"]:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+    pointer-events: none; }
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     /* Override default look */
@@ -2667,6 +2675,14 @@ summary.accordion-header::-webkit-details-marker {
     width: 0.8rem;
     cursor: pointer;
     /* Cursor on hover */ }
+  .slider::-moz-range-progress {
+    background: #fff; }
+  .slider.slider-with-sections {
+    background: -webkit-repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 2px, transparent 10%) no-repeat 50% 50%;
+    background: -moz-repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 2px, transparent 10%) no-repeat 50% 50%;
+    background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 2px, transparent 10%) no-repeat 50% 50%;
+    background-size: 100% 100%;
+    height: 0.4rem; }
 
 .tab {
   align-items: center;
@@ -2862,7 +2878,7 @@ summary.accordion-header::-webkit-details-marker {
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform;
-  background: #2c2c30;
+  background: #2c2c2f;
   border-right: 0.05rem solid rgba(255, 255, 255, 0.05);
   z-index: 9999; }
   .navigation-drawer.active {
@@ -2897,22 +2913,20 @@ summary.accordion-header::-webkit-details-marker {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(32, 32, 35, 0.75);
+  background: rgba(32, 32, 34, 0.75);
   z-index: 900; }
 
 .top-navigation {
   width: 100%;
   height: 2.45rem;
-  z-index: 900;
-  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.05); }
+  z-index: 900; }
 
 .bottom-navigation {
   position: relative;
   height: 2.55rem;
   width: 100%;
-  background: #2c2c30;
-  z-index: 100;
-  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.05); }
+  background: #2c2c2f;
+  z-index: 100; }
   .bottom-navigation .bottom-navigation-item {
     display: flex;
     align-items: center;
@@ -3020,7 +3034,7 @@ a.text-error:visited {
   color: #FFF; }
 
 .bg-gray {
-  background: #202023 !important;
+  background: #202022 !important;
   color: #FFF; }
 
 .bg-success {
@@ -3035,7 +3049,7 @@ a.text-error:visited {
   background: #ff453a !important; }
 
 .background-secondary {
-  background: #2c2c30 !important; }
+  background: #2c2c2f !important; }
 
 .bg-primary {
   background: #fff; }
@@ -3130,7 +3144,6 @@ a.text-error:visited {
 
 .filter-grayscale {
   -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
   filter: grayscale(100%); }
 
 .background-blur {
@@ -3138,7 +3151,7 @@ a.text-error:visited {
   .background-blur:before {
     content: '';
     position: absolute;
-    background-color: rgba(56, 56, 62, 0.2);
+    background-color: rgba(57, 57, 60, 0.2);
     width: 100%;
     height: 100%;
     backdrop-filter: blur(20px);
@@ -3425,7 +3438,7 @@ a.text-error:visited {
 .height50 {
   height: 50%; }
 
-.z-index-1 {
+.z-index-1, .top-navigation, .bottom-navigation {
   z-index: 100; }
 
 .z-index-max {
@@ -3473,10 +3486,10 @@ a.text-error:visited {
   font-variant: small-caps; }
 
 .text-sm {
-  font-size: 0.6rem; }
+  font-size: 0.6rem !important; }
 
 .text-xs {
-  font-size: 11px; }
+  font-size: 11px !important; }
 
 .text-light {
   font-weight: 100; }
@@ -3597,26 +3610,50 @@ a.text-error:visited {
   opacity: .5;
   pointer-events: none; }
 
+.blank {
+  background-image: repeating-linear-gradient(-45deg, transparent 0 20px, rgba(255, 255, 255, 0.05) 1rem 2rem);
+  padding: 1rem;
+  border-radius: 0.2rem; }
+
 @media (min-width: 840px) {
   ::-webkit-scrollbar {
     position: absolute;
     right: 7px;
     width: 7px; }
   ::-webkit-scrollbar-thumb {
-    background-color: #2c2c30; }
+    background-color: #2c2c2f; }
   ::-webkit-scrollbar-track {
     background-color: transparent; }
   .theme-default-local ::-webkit-scrollbar-thumb {
     background-color: black; } }
 
+.z-depth-0 {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
+
+.z-depth-1 {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+
+.z-depth-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
+
+.z-depth-3 {
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+
+.z-depth-4 {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2); }
+
+.z-depth-5 {
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2); }
+
+.s-rounded {
+  border-radius: 0.2rem; }
+
+.s-circle {
+  border-radius: 50%; }
+
 .h100 {
   min-height: 100vh; }
-
-.border-top {
-  border-top: 0.05rem solid rgba(255, 255, 255, 0.05); }
-
-.border-bottom {
-  border-bottom: 0.05rem solid rgba(255, 255, 255, 0.05); }
 
 html, body {
   font-family: 'HelveticaNeueCyr', sans-serif;
@@ -3694,28 +3731,28 @@ html, body {
   opacity: 0;
   transform: translateX(-50px);
 }
-</style><script charset="utf-8" src="/js/0.a89948411bc17c8dce57.js"></script><style type="text/css">#container[data-v-6ee34778] {
+</style><script charset="utf-8" src="/js/0.d4892be021fbe7c44421.js"></script><style type="text/css">#container[data-v-6c4dba60] {
   display: block !important;
 }
-.background-image[data-v-6ee34778] {
+.background-image[data-v-6c4dba60] {
   position: absolute;
   filter: brightness(80%);
   z-index: -1;
 }
 @media (min-width: 600px) {
-.description[data-v-6ee34778] {
-    width: 200px;
+.description[data-v-6c4dba60] {
+    width: 250px;
 }
-.page-number[data-v-6ee34778] {
+.page-number[data-v-6c4dba60] {
     position: fixed;
     right: 20px;
     bottom: 40px;
     z-index: 999999;
 }
-.page-number span[data-v-6ee34778] {
+.page-number span[data-v-6c4dba60] {
       transform: rotate(90deg);
 }
-.page-number[data-v-6ee34778]:before {
+.page-number[data-v-6c4dba60]:before {
       content: '';
       position: absolute;
       width: 2px;
@@ -3725,10 +3762,10 @@ html, body {
       background: white;
 }
 }
-.description[data-v-6ee34778] {
+.description[data-v-6c4dba60] {
   position: relative;
 }
-.description[data-v-6ee34778]:before {
+.description[data-v-6c4dba60]:before {
     content: '';
     position: absolute;
     background: white;
@@ -3737,4 +3774,4 @@ html, body {
     left: -120%;
     top: 50%;
 }
-</style></head><body><noscript><strong>We're sorry but app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><div class="header flex-centered-v"><div class="container grid-xl unit content-padding"><div class="unit-section"><span class="text-bold h6">Marcius Capital</span> <span class="text-light text-secondary hide-sm" style="margin-left: 1rem;">En</span></div> <div class="unit-section"><a href="https://drive.google.com/file/d/1RXDoZ0EFpMiWXJByd9G9OL6f7HeDm36r/view" target="_blank">Investors</a></div></div></div> <div data-v-6ee34778="" id="container"><section data-v-6ee34778="" data-anchor="page-0" id="'page-' + index" class="p-relative"><div data-v-6ee34778="" class="container grid-lg h100 flex-centered-vertical"><div data-v-6ee34778="" class="width100 "><div data-v-6ee34778="" class="row text-center-sm"><div data-v-6ee34778="" class="column col-8 col-sm-12"><div data-v-6ee34778="" class="description h6 mb2">Start earning more with our mobile and web application</div> <div data-v-6ee34778="" class="h1 text-semibold mb2">Boost for free.</div> <a data-v-6ee34778="" href="https://docs.google.com/forms/d/1JO7pkz-KSX9c4Z4cg1DBAT7vBs8riHRIUvg0ZM6eABc" class="btn btn-lg" style="padding: 0px 40px;">Get early access</a></div></div></div></div> <div data-v-6ee34778="" class="background-image block-filled" style="background: url(&quot;/side1.png?9706a3c6adab252990da1cff3a17ac3f&quot;);"></div></section><section data-v-6ee34778="" data-anchor="page-1" id="'page-' + index" class="p-relative"><div data-v-6ee34778="" class="container grid-lg h100 flex-centered-vertical"><div data-v-6ee34778="" class="width100 "><div data-v-6ee34778="" class="row text-center-sm"><div data-v-6ee34778="" class="column col-8 col-sm-12"><div data-v-6ee34778="" class="description h6 mb2">Manual and automatic trading on crypto-exchange</div> <div data-v-6ee34778="" class="h1 text-semibold mb2">Capital for Traders</div> <a data-v-6ee34778="" href="https://docs.google.com/forms/d/1JO7pkz-KSX9c4Z4cg1DBAT7vBs8riHRIUvg0ZM6eABc" class="btn btn-lg" style="padding: 0px 40px;">Get early access</a></div></div></div></div> <div data-v-6ee34778="" class="background-image block-filled" style="background: url(&quot;/side2.png?704a59199ffa9b4c5b34e4eff0e75a2d&quot;);"></div></section><section data-v-6ee34778="" data-anchor="page-2" id="'page-' + index" class="p-relative"><div data-v-6ee34778="" class="container grid-lg h100 flex-centered-vertical"><div data-v-6ee34778="" class="width100 "><div data-v-6ee34778="" class="row text-center-sm"><div data-v-6ee34778="" class="column col-8 col-sm-12"><div data-v-6ee34778="" class="description h6 mb2">Will earn you 48% per annum*</div> <div data-v-6ee34778="" class="h1 text-semibold mb2">Capital for <s>Investors</s> All</div> <a data-v-6ee34778="" href="https://docs.google.com/forms/d/1JO7pkz-KSX9c4Z4cg1DBAT7vBs8riHRIUvg0ZM6eABc" class="btn btn-lg" style="padding: 0px 40px;">Get early access</a></div></div></div></div> <div data-v-6ee34778="" class="background-image block-filled" style="background: url(&quot;/side3.png?48518ff874ace57177a4ec3473144a7d&quot;);"></div></section><section data-v-6ee34778="" data-anchor="page-3" id="'page-' + index" class="p-relative"><div data-v-6ee34778="" class="container grid-lg h100 flex-centered-vertical"><div data-v-6ee34778="" class="width100 "><div data-v-6ee34778="" class="row text-center-sm"><div data-v-6ee34778="" class="column col-8 col-sm-12"><div data-v-6ee34778="" class="description h6 mb2">Try our hackable solution free forever</div> <div data-v-6ee34778="" class="h1 text-semibold mb2">Join and start earning</div> <a data-v-6ee34778="" href="https://docs.google.com/forms/d/1JO7pkz-KSX9c4Z4cg1DBAT7vBs8riHRIUvg0ZM6eABc" class="btn btn-lg" style="padding: 0px 40px;">Get early access</a></div></div></div></div> <div data-v-6ee34778="" class="background-image block-filled" style="background: url(&quot;/side4.png?632d1f1576eb4f076cd00afd4c6065cf&quot;);"></div></section></div> <div class="footer flex-centered-vertical"><div class="container grid-xl text-center-sm"><a href="https://discordapp.com/invite/DaWfrPx" target="_blank" class="link link-padding text-light">Discord</a><a href="https://t.me/joinchat/G5DV0xUO-pvjEmoWc7dBUg" target="_blank" class="link link-padding text-light">Telegram</a><a href="https://github.com/marcius-capital" target="_blank" class="link link-padding text-light">GitHub</a></div></div></div><script type="text/javascript" src="/js/runtime.a89948411bc17c8dce57.js"></script><script type="text/javascript" src="/js/vendors.a89948411bc17c8dce57.js"></script><script type="text/javascript" src="/js/main.a89948411bc17c8dce57.js"></script></body></html>
+</style></head><body><noscript><strong>We're sorry but app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><div class="header flex-centered-v"><div class="container grid-xl unit content-padding"><div class="unit-section"><span class="text-bold h6">Marcius Capital</span> <span class="text-light text-secondary hide-sm" style="margin-left: 1rem;">En</span></div> <div class="unit-section"><a href="https://drive.google.com/file/d/1RXDoZ0EFpMiWXJByd9G9OL6f7HeDm36r/view" target="_blank">Investors</a></div></div></div> <div data-v-6c4dba60="" id="container"><section data-v-6c4dba60="" data-anchor="page-0" id="'page-' + index" class="p-relative"><div data-v-6c4dba60="" class="container grid-lg h100 flex-centered-vertical"><div data-v-6c4dba60="" class="width100 "><div data-v-6c4dba60="" class="row text-center-sm"><div data-v-6c4dba60="" class="column col-8 col-sm-12"><div data-v-6c4dba60="" class="description h6 mb2">Start earning more with our <b>mobile</b> and <b>desktop</b> apps</div> <div data-v-6c4dba60="" class="h1 text-semibold mb2">Boost your capital for free</div> <a data-v-6c4dba60="" href="https://docs.google.com/forms/d/e/1FAIpQLSd8c8Nrbceh2h_jYRA5ulG3QdKpCKvO6VbkN43mjBN3ccg0UQ/viewform" class="btn btn-lg" style="padding: 0px 40px;">Get early access</a></div></div></div></div> <div data-v-6c4dba60="" class="background-image block-filled" style="background: url(&quot;/side1.jpg?eed563c62564699e7dec900ca2f99fb7&quot;);"></div></section><section data-v-6c4dba60="" data-anchor="page-1" id="'page-' + index" class="p-relative"><div data-v-6c4dba60="" class="container grid-lg h100 flex-centered-vertical"><div data-v-6c4dba60="" class="width100 "><div data-v-6c4dba60="" class="row text-center-sm"><div data-v-6c4dba60="" class="column col-8 col-sm-12"><div data-v-6c4dba60="" class="description h6 mb2"><b>Manual</b> and <b>automatic</b> trading on crypto-exchange: Binance</div> <div data-v-6c4dba60="" class="h1 text-semibold mb2">Capital for Traders</div> <a data-v-6c4dba60="" href="https://docs.google.com/forms/d/e/1FAIpQLSd8c8Nrbceh2h_jYRA5ulG3QdKpCKvO6VbkN43mjBN3ccg0UQ/viewform" class="btn btn-lg" style="padding: 0px 40px;">Get early access</a></div></div></div></div> <div data-v-6c4dba60="" class="background-image block-filled" style="background: url(&quot;/side2.jpg?7dc4df3d6ec88dc63b9158eb44a08ac8&quot;);"></div></section><section data-v-6c4dba60="" data-anchor="page-2" id="'page-' + index" class="p-relative"><div data-v-6c4dba60="" class="container grid-lg h100 flex-centered-vertical"><div data-v-6c4dba60="" class="width100 "><div data-v-6c4dba60="" class="row text-center-sm"><div data-v-6c4dba60="" class="column col-8 col-sm-12"><div data-v-6c4dba60="" class="description h6 mb2">Will earn <b>48%</b>* per annum. Сhoose your own trader</div> <div data-v-6c4dba60="" class="h1 text-semibold mb2">Capital for <s>Investors</s> All</div> <a data-v-6c4dba60="" href="https://docs.google.com/forms/d/e/1FAIpQLSd8c8Nrbceh2h_jYRA5ulG3QdKpCKvO6VbkN43mjBN3ccg0UQ/viewform" class="btn btn-lg" style="padding: 0px 40px;">Get early access</a></div></div></div></div> <div data-v-6c4dba60="" class="background-image block-filled" style="background: url(&quot;/side3.jpg?79762e7be5b12d289297b32f723e511d&quot;);"></div></section><section data-v-6c4dba60="" data-anchor="page-3" id="'page-' + index" class="p-relative"><div data-v-6c4dba60="" class="container grid-lg h100 flex-centered-vertical"><div data-v-6c4dba60="" class="width100 "><div data-v-6c4dba60="" class="row text-center-sm"><div data-v-6c4dba60="" class="column col-8 col-sm-12"><div data-v-6c4dba60="" class="description h6 mb2">Try our hackable solution <b>for free forever</b></div> <div data-v-6c4dba60="" class="h1 text-semibold mb2">Join and start earning</div> <a data-v-6c4dba60="" href="https://docs.google.com/forms/d/e/1FAIpQLSd8c8Nrbceh2h_jYRA5ulG3QdKpCKvO6VbkN43mjBN3ccg0UQ/viewform" class="btn btn-lg" style="padding: 0px 40px;">Get early access</a></div></div></div></div> <div data-v-6c4dba60="" class="background-image block-filled" style="background: url(&quot;/side4.jpg?825cd6e41bdd12d7e5ca373ae0674150&quot;);"></div></section></div> <div class="footer flex-centered-vertical"><div class="container grid-xl text-center-sm"><a href="https://discordapp.com/invite/DaWfrPx" target="_blank" class="link link-padding text-light">Discord</a><a href="https://t.me/joinchat/G5DV0xUO-pvjEmoWc7dBUg" target="_blank" class="link link-padding text-light">Telegram</a><a href="https://github.com/marcius-capital" target="_blank" class="link link-padding text-light">GitHub</a></div></div></div><script type="text/javascript" src="/js/runtime.d4892be021fbe7c44421.js"></script><script type="text/javascript" src="/js/vendors.d4892be021fbe7c44421.js"></script><script type="text/javascript" src="/js/main.d4892be021fbe7c44421.js"></script></body></html>
