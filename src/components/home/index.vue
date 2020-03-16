@@ -11,7 +11,7 @@
 
 							<div class="h1 text-semibold mb2" v-html="i.title"></div>
 
-							<a class="btn btn-lg" href="https://docs.google.com/forms/d/1JO7pkz-KSX9c4Z4cg1DBAT7vBs8riHRIUvg0ZM6eABc"
+							<a class="btn btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSd8c8Nrbceh2h_jYRA5ulG3QdKpCKvO6VbkN43mjBN3ccg0UQ/viewform"
 								style="padding: 0 40px;">Get early access</a>
 						</div>
 					</div>
@@ -32,10 +32,10 @@
 <script>
 
 	// images
-	import side1 from './img/side1.png'
-	import side2 from './img/side2.png'
-	import side3 from './img/side3.png'
-	import side4 from './img/side4.png'
+	import side1 from './img/side1.jpg'
+	import side2 from './img/side2.jpg'
+	import side3 from './img/side3.jpg'
+	import side4 from './img/side4.jpg'
 
 	export default {
 		data: () => ({
@@ -43,23 +43,23 @@
 			instance: null,
 			items: [
 				{
-					title: 'Boost for free.',
-					description: 'Start earning more with our mobile and web application',
+					title: 'Boost your capital for free',
+					description: 'Start earning more with our <b>mobile</b> and <b>desktop</b> apps',
 					img: side1,
 				},
 				{
 					title: 'Capital for Traders',
-					description: 'Manual and automatic trading on crypto-exchange',
+					description: '<b>Manual</b> and <b>automatic</b> trading on crypto-exchange: Binance',
 					img: side2,
 				},
 				{
 					title: 'Capital for <s>Investors</s> All',
-					description: 'Will earn you 48% per annum*',
+					description: 'Will earn <b>48%</b>* per annum. Сhoose your own trader',
 					img: side3,
 				},
 				{
 					title: 'Join and start earning',
-					description: 'Try our hackable solution free forever',
+					description: 'Try our hackable solution <b>for free forever</b>',
 					img: side4
 				}
 			],
@@ -86,7 +86,7 @@
 
 	@media (min-width: 600px) {
 		.description {
-			width: 200px;
+			width: 250px;
 		}
 
 		.page-number {
